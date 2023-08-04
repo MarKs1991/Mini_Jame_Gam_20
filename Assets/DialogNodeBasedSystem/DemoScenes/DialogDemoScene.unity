@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBehaviour: {fileID: 946874651819680484}
-  dialogGraph: {fileID: 11400000, guid: 66b896e90ba37954fbf79bfcfab303cc, type: 2}
+  dialogGraph: {fileID: 11400000, guid: 13fcae26d4c18d74ab6985be9e9b8421, type: 2}
 --- !u!4 &1896025583
 Transform:
   m_ObjectHideFlags: 0
@@ -260,6 +260,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 451518185724262031, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1904434975857759754, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -303,6 +307,18 @@ PrefabInstance:
     - target: {fileID: 1904434975857759754, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514229507618195841, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 72.98004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352824822504247829, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6627439700010980252, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: dialogCharDelay
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 8051659738199645558, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
       propertyPath: m_IsActive
