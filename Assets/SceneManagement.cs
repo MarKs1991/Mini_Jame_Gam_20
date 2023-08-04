@@ -24,5 +24,6 @@ public class SceneManagement : MonoBehaviour
     public void quitGame()
     {
         Application.Quit();
+        Debug.Log("quit");
     }
 }
