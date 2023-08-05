@@ -183,6 +183,7 @@ Transform:
   - {fileID: 495232276}
   - {fileID: 414496032}
   - {fileID: 317312625}
+  - {fileID: 2040231070}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -974,7 +975,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6293932728be3754e81e8af14e100e4d, type: 3}
   - {fileID: 8300000, guid: 874f15ebe08253a46baf796e41b4822c, type: 3}
   - {fileID: 8300000, guid: 397f8bc4680bcb041a6340f4d97a019b, type: 3}
+  - {fileID: 8300000, guid: aa77acf4646372044a616d1d6da530fb, type: 3}
+  - {fileID: 8300000, guid: b01878bc6535b924a96ca78a9587198f, type: 3}
   characterController2D: {fileID: 84346351}
+  bulletSpawn: {fileID: 2040231070}
+  bulletGO: {fileID: 3701633169836322428, guid: fcb17e1d54ba0cf499ada8b344471b3d, type: 3}
 --- !u!82 &495232280
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1264,6 +1269,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyGuardTriggerEvent: {fileID: 854551828}
+--- !u!1 &2040231069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040231070}
+  m_Layer: 0
+  m_Name: BulletSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2040231070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040231069}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.019, y: 0.674, z: -0.5931329}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 84346352}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2134646386
 GameObject:
   m_ObjectHideFlags: 0

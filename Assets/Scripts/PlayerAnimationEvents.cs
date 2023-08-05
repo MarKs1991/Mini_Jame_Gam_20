@@ -11,6 +11,7 @@ public class PlayerAnimationEvents : MonoBehaviour
     private AudioSource audioSource = new AudioSource();
     public CharacterController2D characterController2D;
     public Transform bulletSpawn;
+    public GameObject bulletGO;
 
     bool isLanding = false;
 
@@ -113,11 +114,16 @@ public class PlayerAnimationEvents : MonoBehaviour
 
     public void FireBullet()
     {
-        //audioSource.
+        Instantiate(bulletGO, bulletSpawn.transform.position, Quaternion.identity);
     }
 
     public void StopShooting()
     {
         animator.SetBool("isShooting", false);
+    }
+
+    public bool GetIsShootingState()
+    {
+        return animator.GetBool("isShooting");
     }
 }

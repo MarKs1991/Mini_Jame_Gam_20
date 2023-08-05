@@ -24,10 +24,8 @@ public class EnemyGuard : MonoBehaviour
 
     public void ApplyDamage()
     {
-        Debug.Log("Player got damaged!");
         GameObject.FindWithTag("Player").GetComponent<CharacterController2D>().PlayPlayerDamage();
         //ToDo: Apply damage to player
         //ToDo: Trigger Player hurt animation
-        //ToDo: Play hurt sound effect
     }
 }
