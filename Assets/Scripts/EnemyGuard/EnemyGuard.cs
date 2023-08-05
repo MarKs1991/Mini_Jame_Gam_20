@@ -24,7 +24,11 @@ public class EnemyGuard : MonoBehaviour
 
     public void ApplyDamage()
     {
-        GameObject.FindWithTag("Player").GetComponent<CharacterController2D>().PlayPlayerDamage();
+        if (GameObject.FindWithTag("Player").GetComponent<CharacterController2D>() != null)
+            GameObject.FindWithTag("Player").GetComponent<CharacterController2D>().PlayPlayerDamage();
+
+        if(GameObject.FindWithTag("Player").GetComponent<StatusManager>() != null)
+            GameObject.FindWithTag("Player").GetComponent<StatusManager>().takeDamage(damage);
         //ToDo: Apply damage to player
         //ToDo: Trigger Player hurt animation
     }
