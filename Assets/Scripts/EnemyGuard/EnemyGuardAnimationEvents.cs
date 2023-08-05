@@ -26,4 +26,13 @@ public class EnemyGuardAnimationEvents : MonoBehaviour
     {
         enemyGuardTriggerEvent.PlayerDamageCheck();
     }
+    public void getHitByMelee()
+    {
+        animator.SetTrigger("MeleeDamage");
+    }
+
+    public void getHitByWave()
+    {
+        animator.SetTrigger("WaveDamage");
+    }
 }

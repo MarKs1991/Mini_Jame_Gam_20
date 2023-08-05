@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyGuard : MonoBehaviour
 {
+    [SerializeField]
+    private  EnemyGuardAnimationEvents EnemyGuardAnimationEvents;
     public float enemyHealth = 3f;
     public float damage = 1f;
 
@@ -21,10 +23,10 @@ public class EnemyGuard : MonoBehaviour
             ApplyDamage(collision.transform);
 
         }
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Bullet"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Wave"))
         {
             takeDamageFromPlayer(1);
-
+            EnemyGuardAnimationEvents.getHitByWave();
         }
     }
 
@@ -55,6 +57,6 @@ public class EnemyGuard : MonoBehaviour
     {
         enemyHealth = enemyHealth - dmg;
         //TakeDmg Animation
-      
+       
     }
 }
