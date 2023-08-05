@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class EnemyGuard : MonoBehaviour
 {
+    
+    //Animation
     [SerializeField]
-    private  EnemyGuardAnimationEvents EnemyGuardAnimationEvents;
+    private  EnemyGuardAnimationEvents enemyGuardAnimationEvents;
+
+
+    //Status
     public float enemyHealth = 3f;
     public float damage = 1f;
 
@@ -26,7 +31,8 @@ public class EnemyGuard : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wave"))
         {
             takeDamageFromPlayer(1);
-            EnemyGuardAnimationEvents.getHitByWave();
+            enemyGuardAnimationEvents.getHitByWave();
+         
         }
     }
 
@@ -56,7 +62,15 @@ public class EnemyGuard : MonoBehaviour
     public void takeDamageFromPlayer(float dmg)
     {
         enemyHealth = enemyHealth - dmg;
-        //TakeDmg Animation
+        
+        if(enemyHealth <= 0)
+        {
+
+            enemyGuardAnimationEvents.dying();
+        }
        
     }
+
+
+   
 }
