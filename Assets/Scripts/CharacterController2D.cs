@@ -80,7 +80,7 @@ public class CharacterController2D : MonoBehaviour
         // Jumping Anticipation
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            
+            animeEvents.JumpingStarted();
             float randomNumber = Random.Range(0f, 1f);
             if (randomNumber < 0.25f)
             {
@@ -99,9 +99,6 @@ public class CharacterController2D : MonoBehaviour
                 characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Jump4];
             }
             characterAudioSource.Play();
-
-            animeEvents.JumpingStarted();
-            
         }
 
         if (executeJump)
