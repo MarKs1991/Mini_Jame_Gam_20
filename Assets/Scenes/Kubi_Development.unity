@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 7
-  jumpHeight: 4
+  jumpHeight: 5
   gravityScale: 1.5
   mainCamera: {fileID: 222343887}
   characterAudioSource: {fileID: 414496033}
@@ -977,6 +977,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 397f8bc4680bcb041a6340f4d97a019b, type: 3}
   - {fileID: 8300000, guid: aa77acf4646372044a616d1d6da530fb, type: 3}
   - {fileID: 8300000, guid: b01878bc6535b924a96ca78a9587198f, type: 3}
+  - {fileID: 8300000, guid: 658c26a4f3e373442bdc6f0addc01217, type: 3}
+  - {fileID: 8300000, guid: 656d5157d1b0b5144bac0cea8721f986, type: 3}
+  - {fileID: 8300000, guid: 42d9cc26cbff0f04da83f5692bc71502, type: 3}
+  - {fileID: 8300000, guid: 1e5fa3acb4223e6459285aa3734e3a0c, type: 3}
+  - {fileID: 8300000, guid: c6ffb10106a439e42a2446be762f3c72, type: 3}
+  - {fileID: 8300000, guid: a33c1c5c504ffad45b210aa83fbef3e0, type: 3}
   characterController2D: {fileID: 84346351}
   bulletSpawn: {fileID: 2040231070}
   bulletGO: {fileID: 3701633169836322428, guid: fcb17e1d54ba0cf499ada8b344471b3d, type: 3}

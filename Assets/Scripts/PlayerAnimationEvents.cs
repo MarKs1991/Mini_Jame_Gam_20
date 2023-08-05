@@ -7,7 +7,7 @@ public class PlayerAnimationEvents : MonoBehaviour
 {
     private Animator animator = new Animator();
     public List<AudioClip> clipList = new List<AudioClip>();
-    private enum PlayerSounds { Walk1, Walk2, Walk3, Walk4, Shoot1, Shoot2, None}
+    private enum PlayerSounds { Walk1, Walk2, Walk3, Walk4, Shoot1, Shoot2, BonkWoosh1, BonkWoosh2, BonkWoosh3, Bonk1, Bonk2, Bonk3, None}
     private AudioSource audioSource = new AudioSource();
     public CharacterController2D characterController2D;
     public Transform bulletSpawn;
@@ -125,5 +125,58 @@ public class PlayerAnimationEvents : MonoBehaviour
     public bool GetIsShootingState()
     {
         return animator.GetBool("isShooting");
+    }
+
+    public void StartBonking()
+    {
+        animator.SetBool("isBonking", true);
+        float randomNumber = Random.Range(0f, 1f);
+        if (randomNumber < 0.3f)
+        {
+            audioSource.clip = clipList[(int)PlayerSounds.BonkWoosh1];
+        }
+        else if (randomNumber > 0.3f && randomNumber < 0.6f )
+        {
+            audioSource.clip = clipList[(int)PlayerSounds.BonkWoosh2];
+        }
+        else
+        {
+            audioSource.clip = clipList[(int)PlayerSounds.BonkWoosh3];
+        }
+        audioSource.Play();
+    }
+
+    public void StopBonking()
+    {
+        animator.SetBool("isBonking", false);
+    }
+
+    public void DoDamage()
+    {
+        Debug.Log("Bonk an enemy!");
+
+        //ToDo: Only play these sounds, on a successful hit
+        /*
+        float randomNumber = Random.Range(0f, 1f);
+        if (randomNumber < 0.3f)
+        {
+            audioSource.clip = clipList[(int)PlayerSounds.Bonk1];
+        }
+        else if (randomNumber > 0.3f && randomNumber < 0.6f)
+        {
+            audioSource.clip = clipList[(int)PlayerSounds.Bonk2];
+        }
+        else
+        {
+            audioSource.clip = clipList[(int)PlayerSounds.Bonk3];
+        }
+        audioSource.Play();
+        */
+        //ToDo: Do damage to foes
+    }
+
+    public bool GetBonkingState()
+    {
+        return animator.GetBool("isBonking");
     }
 }
