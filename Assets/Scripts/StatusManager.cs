@@ -5,7 +5,7 @@ using UnityEngine;
 public class StatusManager : MonoBehaviour
 {
 
-    public int health;
+    public float health;
     public int collectables;
 
     // Start is called before the first frame update
@@ -20,13 +20,28 @@ public class StatusManager : MonoBehaviour
 
     }
 
+    public void takeDamage(float dmg)
+    {
+        health = health - dmg;
+
+        if (health <= 0)
+            gameoverState();
+
+    }
+
+    public void gameoverState()
+    {
+        //play dyingAnimation
+        //show GameOVERscreen with restart
+    }
+
     public void addHealth(int addHealth)
     {
 
         health = health + addHealth;
-        if (health > 100)
+        if (health > 5)
         {
-            health = 100;
+            health = 5;
         }
 
     }
@@ -34,4 +49,6 @@ public class StatusManager : MonoBehaviour
     {
         collectables = collectables + addedCollectables;
     }
+
+    
 }
