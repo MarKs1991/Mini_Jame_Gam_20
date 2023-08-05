@@ -78,7 +78,7 @@ public class CharacterController2D : MonoBehaviour
         }
 
         // Jumping Anticipation
-        if (Input.GetKeyUp(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyUp(KeyCode.Space) && isGrounded && !animeEvents.GetIsShootingState() && !animeEvents.GetBonkingState())
         {
             animeEvents.JumpingStarted();
             float randomNumber = Random.Range(0f, 1f);
@@ -108,7 +108,20 @@ public class CharacterController2D : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Q) && isGrounded)
         {
-            animeEvents.StartShooting();
+            if (!animeEvents.GetIsShootingState())
+            {
+                animeEvents.StartShooting();
+            }
+            
+        }
+
+        if (Input.GetKeyUp(KeyCode.E) && isGrounded)
+        {
+            if (!animeEvents.GetBonkingState())
+            {
+                animeEvents.StartBonking();
+            }
+
         }
 
         // Camera follow
@@ -169,6 +182,8 @@ public class CharacterController2D : MonoBehaviour
         {
             characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Hurt4];
         }
+
+        characterAudioSource.Play();
     }
 
     public void SetExecuteJumpingTrigger(bool set)
