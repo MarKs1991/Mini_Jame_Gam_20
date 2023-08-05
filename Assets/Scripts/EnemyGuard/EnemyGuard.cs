@@ -18,7 +18,13 @@ public class EnemyGuard : MonoBehaviour
         Debug.Log("Collision detected!");
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            ApplyDamage();
+            ApplyDamage(collision.transform);
+
+        }
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Bullet"))
+        {
+            takeDamageFromPlayer(1);
+
         }
     }
 
@@ -27,9 +33,28 @@ public class EnemyGuard : MonoBehaviour
         if (GameObject.FindWithTag("Player").GetComponent<CharacterController2D>() != null)
             GameObject.FindWithTag("Player").GetComponent<CharacterController2D>().PlayPlayerDamage();
 
-        if(GameObject.FindWithTag("Player").GetComponent<StatusManager>() != null)
+        if (GameObject.FindWithTag("Player").GetComponent<StatusManager>() != null)
             GameObject.FindWithTag("Player").GetComponent<StatusManager>().takeDamage(damage);
+
         //ToDo: Apply damage to player
         //ToDo: Trigger Player hurt animation
+    }
+
+    public void ApplyDamage(Transform transform)
+    {
+        if (transform.GetComponent<CharacterController2D>() != null)
+            transform.GetComponent<CharacterController2D>().PlayPlayerDamage();
+
+        if (transform.GetComponent<StatusManager>() != null)
+            transform.GetComponent<StatusManager>().takeDamage(damage);
+        //ToDo: Apply damage to player
+        //ToDo: Trigger Player hurt animation
+    }
+
+    public void takeDamageFromPlayer(float dmg)
+    {
+        enemyHealth = enemyHealth - dmg;
+        //TakeDmg Animation
+      
     }
 }
