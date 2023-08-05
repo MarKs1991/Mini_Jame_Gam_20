@@ -78,7 +78,7 @@ public class CharacterController2D : MonoBehaviour
         }
 
         // Jumping Anticipation
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyUp(KeyCode.Space) && isGrounded)
         {
             animeEvents.JumpingStarted();
             float randomNumber = Random.Range(0f, 1f);
@@ -104,6 +104,11 @@ public class CharacterController2D : MonoBehaviour
         if (executeJump)
         {
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
+        }
+
+        if (Input.GetKeyUp(KeyCode.Q) && isGrounded)
+        {
+            animeEvents.StartShooting();
         }
 
         // Camera follow

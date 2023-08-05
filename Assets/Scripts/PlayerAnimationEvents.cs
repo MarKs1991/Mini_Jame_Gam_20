@@ -7,9 +7,10 @@ public class PlayerAnimationEvents : MonoBehaviour
 {
     private Animator animator = new Animator();
     public List<AudioClip> clipList = new List<AudioClip>();
-    private enum PlayerSounds { Walk1, Walk2, Walk3, Walk4}
+    private enum PlayerSounds { Walk1, Walk2, Walk3, Walk4, Shoot1, Shoot2, None}
     private AudioSource audioSource = new AudioSource();
     public CharacterController2D characterController2D;
+    public Transform bulletSpawn;
 
     bool isLanding = false;
 
@@ -91,5 +92,32 @@ public class PlayerAnimationEvents : MonoBehaviour
     public bool GetLandingState()
     {
         return isLanding;
+    }
+
+    public void StartShooting()
+    {
+        animator.SetBool("isShooting", true);
+        float randomNumber = Random.Range(0f, 1f);
+        if (randomNumber <= 0.5f)
+        {
+            Debug.Log("Shot 1");
+            audioSource.clip = clipList[(int)PlayerSounds.Shoot1];
+        }
+        else
+        {
+            Debug.Log("Shot 2");
+            audioSource.clip = clipList[(int)PlayerSounds.Shoot2];
+        }
+        audioSource.Play();
+    }
+
+    public void FireBullet()
+    {
+        //audioSource.
+    }
+
+    public void StopShooting()
+    {
+        animator.SetBool("isShooting", false);
     }
 }
