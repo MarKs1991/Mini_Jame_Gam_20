@@ -6,6 +6,7 @@ public class StatusManager : MonoBehaviour
 {
 
     public int health;
+    public int collectables;
 
     // Start is called before the first frame update
     void Start()
@@ -28,5 +29,9 @@ public class StatusManager : MonoBehaviour
             health = 100;
         }
 
+    }
+    public void addCollectable(int addedCollectables)
+    {
+        collectables = collectables + addedCollectables;
     }
 }
