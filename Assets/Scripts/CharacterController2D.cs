@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class CharacterController2D : MonoBehaviour
@@ -18,13 +19,17 @@ public class CharacterController2D : MonoBehaviour
     CapsuleCollider2D mainCollider;
     Transform t;
 
-    public AudioSource characterMovementAudioSource;
+    public AudioSource characterAudioSource;
     public List<AudioClip> clipList = new List<AudioClip>();
-    private enum audioMovementSoundClip {Jump, None};
+    private enum audioMovementSoundClip {Jump1, Jump2, Jump3, Jump4, Hurt1, Hurt2, Hurt3, Hurt4, None};
+
+    private PlayerAnimationEvents animeEvents;
+    private bool executeJump = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        animeEvents = this.transform.GetChild(0).GetComponent<PlayerAnimationEvents>();
         t = transform;
         r2d = GetComponent<Rigidbody2D>();
         mainCollider = GetComponent<CapsuleCollider2D>();
@@ -46,6 +51,7 @@ public class CharacterController2D : MonoBehaviour
         if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && (isGrounded || Mathf.Abs(r2d.velocity.x) > 0.01f))
         {
             moveDirection = Input.GetKey(KeyCode.A) ? -1 : 1;
+            animeEvents.RunningStarted();
         }
         else
         {
@@ -53,6 +59,7 @@ public class CharacterController2D : MonoBehaviour
             {
                 moveDirection = 0;
             }
+            animeEvents.IdleStarted();
         }
 
         // Change facing direction
@@ -70,12 +77,36 @@ public class CharacterController2D : MonoBehaviour
             }
         }
 
-        // Jumping
+        // Jumping Anticipation
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            
+            float randomNumber = Random.Range(0f, 1f);
+            if (randomNumber < 0.25f)
+            {
+                characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Jump1];
+            }
+            else if (randomNumber > 0.25f && randomNumber < 0.5f)
+            {
+                characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Jump2];
+            }
+            else if (randomNumber > 0.5f && randomNumber < 0.75f)
+            {
+                characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Jump3];
+            }
+            else
+            {
+                characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Jump4];
+            }
+            characterAudioSource.Play();
+
+            animeEvents.JumpingStarted();
+            
+        }
+
+        if (executeJump)
+        {
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
-            characterMovementAudioSource.clip = clipList[(int)audioMovementSoundClip.Jump];
-            characterMovementAudioSource.Play();
         }
 
         // Camera follow
@@ -85,7 +116,7 @@ public class CharacterController2D : MonoBehaviour
         }
     }
 
-    public void LateUpdate()
+    private void LateUpdate()
     {
         Bounds colliderBounds = mainCollider.bounds;
         float colliderRadius = mainCollider.size.x * 0.4f * Mathf.Abs(transform.localScale.x);
@@ -101,6 +132,12 @@ public class CharacterController2D : MonoBehaviour
                 if (colliders[i] != mainCollider)
                 {
                     isGrounded = true;
+                    if (animeEvents.GetLandingState())
+                    {
+                        Debug.Log("Jump about to be finished!");
+                        animeEvents.LandingAchieved();
+                    }
+                    
                     break;
                 }
             }
@@ -108,5 +145,33 @@ public class CharacterController2D : MonoBehaviour
 
         // Apply movement velocity
         r2d.velocity = new Vector2((moveDirection) * maxSpeed, r2d.velocity.y);
+    }
+
+    public void PlayPlayerDamage()
+    {
+        float randomNumber = Random.Range(0f, 1f);
+
+        if (randomNumber < 0.25f)
+        {
+            characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Hurt1];
+        }
+        else if (randomNumber > 0.25f && randomNumber < 0.5f)
+        {
+            characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Hurt2];
+        }
+        else if (randomNumber > 0.5f && randomNumber < 0.75f)
+        {
+            characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Hurt3];
+        }
+        else
+        {
+            characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Hurt4];
+        }
+    }
+
+    public void SetExecuteJumpingTrigger(bool set)
+    {
+        Debug.Log("SetExecuteJumpingTrigger: " + set);
+        executeJump = set;
     }
 }

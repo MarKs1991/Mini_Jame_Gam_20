@@ -9,7 +9,6 @@ public class AiPatrol : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(true);
-        gAM
       
     }
 
@@ -20,8 +19,8 @@ public class AiPatrol : MonoBehaviour
 
   }
 
-
-  void OnTriggerEnter2D(Colliider2D col)
+    /*
+  void OnTriggerEnter2D(Collider2D col)
   {
     if (col.gameObject.CompareTag("Bounds")
     {
@@ -33,4 +32,5 @@ public class AiPatrol : MonoBehaviour
   
 
   }
+    */
 }
