@@ -26,6 +26,8 @@ public class CharacterController2D : MonoBehaviour
     private PlayerAnimationEvents animeEvents;
     private bool executeJump = false;
 
+    private UIMAnager uiManager = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,8 @@ public class CharacterController2D : MonoBehaviour
         {
             cameraPos = mainCamera.transform.position;
         }
+
+        uiManager = GameObject.Find("CharacterDisplayCanvas").GetComponent<UIMAnager>();
     }
 
     // Update is called once per frame
@@ -108,9 +112,15 @@ public class CharacterController2D : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Q) && isGrounded)
         {
-            if (!animeEvents.GetIsShootingState())
+            if (uiManager == null)
+            {
+                uiManager = GameObject.Find("CharacterDisplayCanvas").GetComponent<UIMAnager>();
+            }
+
+            if (!animeEvents.GetIsShootingState() && uiManager.GetAmmoCount() > 0)
             {
                 animeEvents.StartShooting();
+                uiManager.AdjustHealthAndPipeDisplay(-1, false);
             }
             
         }
