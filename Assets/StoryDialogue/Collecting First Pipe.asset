@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 353
-    y: 274
+    x: -323
+    y: 527
     width: 170
     height: 115
   isDragging: 0
@@ -44,8 +44,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 154
-    y: 275
+    x: -522
+    y: 528
     width: 170
     height: 115
   isDragging: 0
@@ -72,8 +72,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 548
-    y: 275
+    x: -128
+    y: 528
     width: 170
     height: 115
   isDragging: 0
@@ -124,8 +124,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1553
-    y: 264
+    x: 877
+    y: 517
     width: 170
     height: 115
   isDragging: 0
@@ -152,12 +152,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1757
-    y: 262
+    x: 1081
+    y: 515
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
     characterName: TEAVA
     text: Not important. Let's go!
@@ -180,8 +180,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 756
-    y: 274
+    x: 80
+    y: 527
     width: 170
     height: 115
   isDragging: 0
@@ -208,8 +208,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1358
-    y: 266
+    x: 682
+    y: 519
     width: 170
     height: 115
   isDragging: 0
@@ -236,8 +236,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1156
-    y: 270
+    x: 480
+    y: 523
     width: 170
     height: 115
   isDragging: 0
@@ -264,8 +264,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 951
-    y: 272
+    x: 275
+    y: 525
     width: 170
     height: 115
   isDragging: 0

@@ -16,15 +16,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -596
-    y: 314
+    x: -808
+    y: 685
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: "NOT\u0102"
-    text: Maybe we should avoid touching it
+    text: Maybe we should avoid touching it.
     characterSprite: {fileID: 21300000, guid: 7aff7d0cbcdb41e4e8f39af833c476a0, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 7686870081498897168}
@@ -44,8 +44,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 259
-    y: 309
+    x: 47
+    y: 680
     width: 170
     height: 115
   isDragging: 0
@@ -73,8 +73,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 682
-    y: 313
+    x: 470
+    y: 684
     width: 170
     height: 115
   isDragging: 0
@@ -101,15 +101,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -811
-    y: 314
+    x: -1023
+    y: 685
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: TEAVA
-    text: It's giving me some good vibrations
+    text: It's giving me some good vibrations.
     characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: -4337707812319636015}
@@ -129,8 +129,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -166
-    y: 309
+    x: -378
+    y: 680
     width: 170
     height: 115
   isDragging: 0
@@ -182,8 +182,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 46
-    y: 310
+    x: -166
+    y: 681
     width: 170
     height: 115
   isDragging: 0
@@ -210,8 +210,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 471
-    y: 310
+    x: 259
+    y: 681
     width: 170
     height: 115
   isDragging: 0
@@ -238,8 +238,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -1013
-    y: 314
+    x: -1225
+    y: 685
     width: 170
     height: 115
   isDragging: 0
@@ -266,15 +266,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 890
-    y: 308
+    x: 678
+    y: 679
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: "NOT\u0102"
-    text: We should keep going
+    text: We should keep going.
     characterSprite: {fileID: 21300000, guid: 7aff7d0cbcdb41e4e8f39af833c476a0, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 0}
@@ -294,8 +294,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -379
-    y: 312
+    x: -591
+    y: 683
     width: 170
     height: 115
   isDragging: 0

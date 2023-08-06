@@ -16,12 +16,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 824
-    y: 364
+    x: 773
+    y: 643
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
     characterName: TEAVA
     text: Not a problem.
@@ -44,8 +44,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 612
-    y: 362
+    x: 561
+    y: 641
     width: 170
     height: 115
   isDragging: 0
@@ -72,8 +72,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 411
-    y: 362
+    x: 360
+    y: 641
     width: 170
     height: 115
   isDragging: 0
@@ -123,8 +123,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 211
-    y: 363
+    x: 160
+    y: 642
     width: 170
     height: 115
   isDragging: 0
@@ -151,8 +151,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 14
-    y: 363
+    x: -37
+    y: 642
     width: 170
     height: 115
   isDragging: 0
@@ -179,8 +179,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -599
-    y: 367
+    x: -650
+    y: 646
     width: 170
     height: 115
   isDragging: 0
@@ -207,8 +207,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -390
-    y: 369
+    x: -441
+    y: 648
     width: 170
     height: 115
   isDragging: 0
@@ -235,8 +235,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -183
-    y: 365
+    x: -234
+    y: 644
     width: 170
     height: 115
   isDragging: 0

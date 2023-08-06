@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -458
-    y: 385
+    x: -1188
+    y: 753
     width: 170
     height: 115
   isDragging: 0
@@ -44,15 +44,15 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -33
-    y: 380
+    x: -763
+    y: 748
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: 
-    text: Teave collects the steam rifle.
+    text: Teave collects the sound rifle.
     characterSprite: {fileID: 0}
   parentNode: {fileID: 0}
   childNode: {fileID: 6013917447115028555}
@@ -72,8 +72,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -242
-    y: 384
+    x: -972
+    y: 752
     width: 170
     height: 115
   isDragging: 0
@@ -100,8 +100,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 618
-    y: 374
+    x: -112
+    y: 742
     width: 170
     height: 115
   isDragging: 0
@@ -128,8 +128,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1276
-    y: 376
+    x: 546
+    y: 744
     width: 170
     height: 115
   isDragging: 0
@@ -181,8 +181,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 404
-    y: 375
+    x: -326
+    y: 743
     width: 170
     height: 115
   isDragging: 0
@@ -209,8 +209,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 846
-    y: 373
+    x: 116
+    y: 741
     width: 170
     height: 115
   isDragging: 0
@@ -237,12 +237,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1485
-    y: 371
+    x: 755
+    y: 738
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
     characterName: TEAVA
     text: Heeeeeeeeeey!
@@ -265,8 +265,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 184
-    y: 379
+    x: -546
+    y: 747
     width: 170
     height: 115
   isDragging: 0
@@ -293,8 +293,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1063
-    y: 369
+    x: 333
+    y: 737
     width: 170
     height: 115
   isDragging: 0

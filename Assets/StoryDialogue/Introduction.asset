@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -775
-    y: 391
+    x: -771
+    y: 643
     width: 170
     height: 115
   isDragging: 0
@@ -46,8 +46,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 479
-    y: 378
+    x: 502
+    y: 628
     width: 170
     height: 115
   isDragging: 0
@@ -97,8 +97,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -153
-    y: 383
+    x: -130
+    y: 634
     width: 170
     height: 115
   isDragging: 0
@@ -126,8 +126,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -358
-    y: 386
+    x: -335
+    y: 635
     width: 170
     height: 115
   isDragging: 0
@@ -155,8 +155,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 267
-    y: 378
+    x: 290
+    y: 628
     width: 170
     height: 115
   isDragging: 0
@@ -183,8 +183,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -560
-    y: 386
+    x: -537
+    y: 636
     width: 170
     height: 115
   isDragging: 0
@@ -211,8 +211,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 63
-    y: 380
+    x: 86
+    y: 630
     width: 170
     height: 115
   isDragging: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: Well I wouldn't have needed to rush if someone hadn't forgotten to wake
-      me up
+      me up.
     characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 4995563276182510672}
@@ -240,8 +240,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 690
-    y: 377
+    x: 713
+    y: 627
     width: 170
     height: 115
   isDragging: 0
