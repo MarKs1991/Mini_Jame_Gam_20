@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyGuardAnimationEvents: {fileID: 9092984592711266484}
-  enemyHealth: 3
+  enemyHealth: 1
   damage: 1
 --- !u!70 &9092984591812102940
 CapsuleCollider2D:

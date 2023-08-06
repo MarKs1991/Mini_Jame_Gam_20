@@ -30,7 +30,7 @@ public class EnemyGuard : MonoBehaviour
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wave"))
         {
-            takeDamageFromPlayer(1);
+            takeDamageFromPlayer(1, false);
             enemyGuardAnimationEvents.getHitByWave();
          
         }
@@ -63,15 +63,22 @@ public class EnemyGuard : MonoBehaviour
         //ToDo: Trigger Player hurt animation
     }
 
-    public void takeDamageFromPlayer(float dmg)
+    public void takeDamageFromPlayer(float dmg, bool melee)
     {
         enemyHealth = enemyHealth - dmg;
+       
+        if(melee)
+        {
+            enemyGuardAnimationEvents.getHitByMelee();
+        }
         
         if(enemyHealth <= 0)
         {
 
             enemyGuardAnimationEvents.dying();
         }
+
+       
        
     }
 

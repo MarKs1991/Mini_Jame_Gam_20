@@ -42,7 +42,7 @@ public class EnemyGuardAnimationEvents : MonoBehaviour
     public void getHitByWave()
     {
         animator.SetTrigger("WaveDamage");
-        PlayEnemyDamageSoundeffect();
+        PlayRangeDamageSoundeffect();
     }
 
     public void dying()
@@ -51,7 +51,29 @@ public class EnemyGuardAnimationEvents : MonoBehaviour
         PlayDeathSoundeffect();
     }
 
+    public void DestroyEnemy()
+    {
+        Destroy(gameObject.transform.parent.gameObject);
+    }
+     
 
+    public void PlayRangeDamageSoundeffect()
+    {
+        float randomNumber = Random.Range(0f, 1f);
+
+        
+        if (randomNumber < 0.5f)
+        {
+            characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Hurt2];
+        }
+        else if (randomNumber > 0.5f && randomNumber < 0.75f)
+        {
+            characterAudioSource.clip = clipList[(int)audioMovementSoundClip.Hurt3];
+        }
+
+
+        characterAudioSource.Play();
+    }
     public void PlayEnemyDamageSoundeffect()
     {
         float randomNumber = Random.Range(0f, 1f);

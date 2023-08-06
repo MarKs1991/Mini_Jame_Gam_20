@@ -134,11 +134,11 @@ public class CharacterController2D : MonoBehaviour
             {
                 animeEvents.StartBonking();
                 bool EnemyinRange = statusManager.getAttackRange();
-                Debug.Log("EnemyinRange= " + EnemyinRange);
+                Debug.Log("EnemyinRange = " + EnemyinRange);
                 if (EnemyinRange)
                 {
-                    statusManager.getAttackTarget().GetComponent<EnemyGuard>().takeDamageFromPlayer(1);
-                    animeEvents.DoDamage();
+                    statusManager.getAttackTarget().GetComponent<EnemyGuard>().takeDamageFromPlayer(1, true);
+                    
                 }
             }
 
