@@ -25,7 +25,7 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: Not a problem.
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 0}
 --- !u!114 &-8288906595030469565
@@ -81,7 +81,7 @@ MonoBehaviour:
   sentence:
     characterName: OOZE
     text: (Angry wiggle)
-    characterSprite: {fileID: -1116819822, guid: 1b4f73d08ef123b4db02e00e8cbeae9a, type: 3}
+    characterSprite: {fileID: 1527910537, guid: 8ac67fd1e0a6afc43906deedecc9105c, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: -8288906595030469565}
 --- !u!114 &11400000
@@ -132,7 +132,7 @@ MonoBehaviour:
   sentence:
     characterName: Teava
     text: You need your eyes checked. That thing is just uncomfortable to look at.
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: -5559693178607561180}
 --- !u!114 &2109304748985656450
@@ -160,7 +160,7 @@ MonoBehaviour:
   sentence:
     characterName: OOZE
     text: (wiggle wiggle)
-    characterSprite: {fileID: -1116819822, guid: 1b4f73d08ef123b4db02e00e8cbeae9a, type: 3}
+    characterSprite: {fileID: 1527910537, guid: 8ac67fd1e0a6afc43906deedecc9105c, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 132026031588763739}
 --- !u!114 &5351146699395034324
@@ -215,8 +215,8 @@ MonoBehaviour:
   isSelected: 0
   sentence:
     characterName: TEAVA
-    text: And why is so sticky looking?
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    text: And why is it so sticky looking?
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 7123103042048305926}
 --- !u!114 &7123103042048305926

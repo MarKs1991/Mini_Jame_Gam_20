@@ -54,7 +54,7 @@ MonoBehaviour:
     characterName: TEAVA
     text: Wow, that felt superb. Like a warm mug of hot chocolate. And it healed
       my wounds.
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 3371784984600915523}
 --- !u!114 &-785487763706314865
@@ -82,7 +82,7 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: ... ... no.
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 3833537074590363523}
 --- !u!114 &-698857267440786985
@@ -110,7 +110,7 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: It's giving me some good vibrations
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: -4337707812319636015}
 --- !u!114 &-697664862823995791
@@ -189,9 +189,9 @@ MonoBehaviour:
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Ominous Voice
+    characterName: 
     text: Teava touches the healing note. Her wounds heal and it disappears.
-    characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite: {fileID: 0}
   parentNode: {fileID: 0}
   childNode: {fileID: -1521160420861601899}
 --- !u!114 &3371784984600915523
@@ -303,6 +303,6 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: I'm gonna touch it.
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: -697664862823995791}

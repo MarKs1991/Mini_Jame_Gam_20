@@ -15,11 +15,14 @@ public class PlayerAnimationEvents : MonoBehaviour
 
     bool isLanding = false;
 
+    public StatusManager statusManager;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = this.transform.GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        
     }
 
     public void JumpingConcluded()
@@ -129,6 +132,7 @@ public class PlayerAnimationEvents : MonoBehaviour
 
     public void StartBonking()
     {
+        
         animator.SetBool("isBonking", true);
         float randomNumber = Random.Range(0f, 1f);
         if (randomNumber < 0.3f)
@@ -144,6 +148,7 @@ public class PlayerAnimationEvents : MonoBehaviour
             audioSource.clip = clipList[(int)PlayerSounds.BonkWoosh3];
         }
         audioSource.Play();
+
     }
 
     public void StopBonking()
@@ -153,28 +158,33 @@ public class PlayerAnimationEvents : MonoBehaviour
 
     public void DoDamage()
     {
-        Debug.Log("Bonk an enemy!");
 
-        //ToDo: Only play these sounds, on a successful hit
-        
-        float randomNumber = Random.Range(0f, 1f);
-        if (randomNumber < 0.3f)
+        if (statusManager.getAttackRange())
         {
-            audioSource.clip = clipList[(int)PlayerSounds.Bonk1];
-        }
-        else if (randomNumber > 0.3f && randomNumber < 0.6f)
-        {
-            audioSource.clip = clipList[(int)PlayerSounds.Bonk2];
-        }
-        else
-        {
-            audioSource.clip = clipList[(int)PlayerSounds.Bonk3];
-        }
-        audioSource.Play();     
-        
+            Debug.Log("Bonk an enemy!");
 
+            //ToDo: Only play these sounds, on a successful hit
+
+            float randomNumber = Random.Range(0f, 1f);
+            if (randomNumber < 0.3f)
+            {
+                audioSource.clip = clipList[(int)PlayerSounds.Bonk1];
+            }
+            else if (randomNumber > 0.3f && randomNumber < 0.6f)
+            {
+                audioSource.clip = clipList[(int)PlayerSounds.Bonk2];
+            }
+            else
+            {
+                audioSource.clip = clipList[(int)PlayerSounds.Bonk3];
+            }
+            audioSource.Play();
+
+        }  
         //ToDo: Do damage to foes
     }
+
+    
 
     public bool GetBonkingState()
     {

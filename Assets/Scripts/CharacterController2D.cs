@@ -30,9 +30,12 @@ public class CharacterController2D : MonoBehaviour
 
     private UIMAnager uiManager = null;
 
+    private CutsceneBehaviour cB = null;
+
     // Start is called before the first frame update
     void Start()
     {
+        cB = GetComponent<CutsceneBehaviour>();
         statusManager = GetComponent<StatusManager>();
         animeEvents = this.transform.GetChild(0).GetComponent<PlayerAnimationEvents>();
         t = transform;
@@ -54,6 +57,13 @@ public class CharacterController2D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!cB.GetInteractableState())
+        {
+            r2d.velocity = new Vector2(0, 0);
+            executeJump = false;
+            return;
+        }
+
         // Movement controls
         if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && (isGrounded || Mathf.Abs(r2d.velocity.x) > 0.01f))
         {
@@ -134,11 +144,11 @@ public class CharacterController2D : MonoBehaviour
             {
                 animeEvents.StartBonking();
                 bool EnemyinRange = statusManager.getAttackRange();
-                Debug.Log("EnemyinRange= " + EnemyinRange);
+                Debug.Log("EnemyinRange = " + EnemyinRange);
                 if (EnemyinRange)
                 {
-                    statusManager.getAttackTarget().GetComponent<EnemyGuard>().takeDamageFromPlayer(1);
-                    animeEvents.DoDamage();
+                    statusManager.getAttackTarget().GetComponent<EnemyGuard>().takeDamageFromPlayer(1, true);
+                    
                 }
             }
 
@@ -153,6 +163,13 @@ public class CharacterController2D : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (!cB.GetInteractableState())
+        {
+            r2d.velocity = new Vector2(0, 0);
+            executeJump = false;
+            return;
+        }
+
         Bounds colliderBounds = mainCollider.bounds;
         float colliderRadius = mainCollider.size.x * 0.4f * Mathf.Abs(transform.localScale.x);
         Vector3 groundCheckPos = colliderBounds.min + new Vector3(colliderBounds.size.x * 0.5f, colliderRadius * 0.9f, 0);
