@@ -53,7 +53,7 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: Whoah. What is that? Some sort of pipe?
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: -8471474215544168654}
 --- !u!114 &-7039566243390907373
@@ -80,8 +80,8 @@ MonoBehaviour:
   isSelected: 0
   sentence:
     characterName: TEAVA
-    text: What's it doing ominously floating here?
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    text: What's it doing ominously floating here.
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 4324345504180738314}
 --- !u!114 &11400000
@@ -161,7 +161,7 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: Not important. Let's go!
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 0}
 --- !u!114 &4324345504180738314
@@ -216,8 +216,8 @@ MonoBehaviour:
   isSelected: 0
   sentence:
     characterName: TEAVA
-    text: Don't worry. I put in my pocket of infinite space
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    text: Don't worry. I put it in my pocket of infinite space.
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 1275196266444316659}
 --- !u!114 &5877087603116199279
@@ -271,8 +271,8 @@ MonoBehaviour:
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Ominous Voice
+    characterName: 
     text: '* Organ Pipe has been acquired *'
-    characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite: {fileID: 0}
   parentNode: {fileID: 0}
   childNode: {fileID: 5877087603116199279}

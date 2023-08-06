@@ -1,3 +1,4 @@
+using cherrydev;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,10 +15,16 @@ public class UIMAnager : MonoBehaviour
     public List<AudioClip> audioClipList = new List<AudioClip>();
     private enum UISounds { HealthGain, PipeGain, None}
 
+    private DialogBehaviour dialogBehaviour = null;
+    public List<DialogNodeGraph> dialogNodeGraphs = new List<DialogNodeGraph>();
+    public enum DialogTitle {Dialog1, Dialog2, Dialog3, Dialog4, Dialog5, Dialog6, Dialog8, Dialog9, Dialog10 }
+
     // Start is called before the first frame update
     void Start()
     {
         uiAudioSource = GetComponent<AudioSource>();
+        dialogBehaviour = GameObject.Find("Dialog Prefab").GetComponent<DialogBehaviour>();
+
         AdjustHealthAndPipeDisplay(0, true);
         AdjustHealthAndPipeDisplay(0, false);
     }
@@ -50,7 +57,7 @@ public class UIMAnager : MonoBehaviour
                 }
                 else
                 {
-                    this.transform.GetChild(0).GetChild(i).GetChild(0).gameObject.SetActive(false);
+                    this.transform.GetChild(1).GetChild(i).GetChild(0).gameObject.SetActive(false);
                 }
             }
         }
@@ -100,5 +107,18 @@ public class UIMAnager : MonoBehaviour
     {
         uiAudioSource.clip = audioClipList[(int)UISounds.PipeGain];
         uiAudioSource.Play();
+    }
+
+    public void ActivateDialog(DialogTitle title)
+    {
+        Debug.Log("Dialog is starting. Stop moving!");
+        //ToDo: Tell all the other objects, that they are not allowed to do anything
+        dialogBehaviour.StartDialog(dialogNodeGraphs[(int)title]);
+    }
+
+    public void StopShowingDialog()
+    {
+        Debug.Log("Dialog is over. Move again!");
+        //ToDo: Tell all the other objects, that they can move again
     }
 }

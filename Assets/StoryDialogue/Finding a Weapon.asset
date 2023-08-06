@@ -51,9 +51,9 @@ MonoBehaviour:
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Ominous Voice
+    characterName: 
     text: Teave collects the steam rifle.
-    characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite: {fileID: 0}
   parentNode: {fileID: 0}
   childNode: {fileID: 6013917447115028555}
 --- !u!114 &-4700398374710512482
@@ -81,7 +81,7 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: Not quite.
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: -5188060308836865317}
 --- !u!114 &-3568023143644534655
@@ -109,7 +109,7 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: I shall call you rifle-chan.
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 3323356068246485264}
 --- !u!114 &-1051265442704940100
@@ -245,8 +245,8 @@ MonoBehaviour:
   isSelected: 0
   sentence:
     characterName: TEAVA
-    text: Heeeeeeeeeey
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    text: Heeeeeeeeeey!
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: 0}
 --- !u!114 &6013917447115028555
@@ -272,9 +272,9 @@ MonoBehaviour:
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: Ominous Voice
+    characterName: 
     text: '* Sound Rifle has been acquired *'
-    characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite: {fileID: 0}
   parentNode: {fileID: 0}
   childNode: {fileID: 926357472347256075}
 --- !u!114 &8884010640734631787
@@ -302,6 +302,6 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: What?
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
   childNode: {fileID: -1051265442704940100}

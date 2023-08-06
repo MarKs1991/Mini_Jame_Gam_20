@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8726345619583956939
+--- !u!114 &-9211392810925229408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16,19 +16,21 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1133
-    y: 372
+    x: -775
+    y: 391
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: "NOT\u0102"
-    text: (Sigh)
-    characterSprite: {fileID: 21300000, guid: 7aff7d0cbcdb41e4e8f39af833c476a0, type: 3}
+    characterName: 
+    text: "In the musical land of Muzic\u0103vania, THE ORGANIST the greatest of
+      all musicians has taken on a new apprentice for the first time in hundreds
+      of years. He awaits atop his castle for her arrival."
+    characterSprite: {fileID: 0}
   parentNode: {fileID: 0}
-  childNode: {fileID: 0}
---- !u!114 &-6971393968152010600
+  childNode: {fileID: 6916429051225139242}
+--- !u!114 &-4510006874174793539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,47 +46,18 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 672
+    x: 479
     y: 378
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: "NOT\u0102"
-    text: Its not my fault you sleep like your 6ft under.
-    characterSprite: {fileID: 21300000, guid: 7aff7d0cbcdb41e4e8f39af833c476a0, type: 3}
+    characterName: Teava
+    text: ... ... ... Shut up, lets just go.
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
-  childNode: {fileID: 1191958273599064607}
---- !u!114 &-3659074769401678931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: Sentence Node
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 209
-    y: 380
-    width: 170
-    height: 115
-  isDragging: 0
-  isSelected: 1
-  sentence:
-    characterName: "NOT\u0102"
-    text: Come on Teava, we don't have time for a break. The Organist will be upset
-      if you're late... on your first day.
-    characterSprite: {fileID: 21300000, guid: 7aff7d0cbcdb41e4e8f39af833c476a0, type: 3}
-  parentNode: {fileID: 0}
-  childNode: {fileID: 2239421240263597998}
+  childNode: {fileID: 9172298085137998231}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,14 +71,17 @@ MonoBehaviour:
   m_Name: Introduction
   m_EditorClassIdentifier: 
   nodesList:
-  - {fileID: -3659074769401678931}
-  - {fileID: 2239421240263597998}
-  - {fileID: -6971393968152010600}
-  - {fileID: 1191958273599064607}
-  - {fileID: -8726345619583956939}
+  - {fileID: -9211392810925229408}
+  - {fileID: 6916429051225139242}
+  - {fileID: 4717327595003323294}
+  - {fileID: 497591562122732419}
+  - {fileID: 8722745059129563795}
+  - {fileID: 4995563276182510672}
+  - {fileID: -4510006874174793539}
+  - {fileID: 9172298085137998231}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
---- !u!114 &1191958273599064607
+--- !u!114 &497591562122732419
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,19 +97,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 900
-    y: 374
+    x: -153
+    y: 383
     width: 170
     height: 115
   isDragging: 0
   isSelected: 0
   sentence:
-    characterName: TEAVA
-    text: ... ... ... Shut up, lets just go.
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+    characterName: "NOT\u0102"
+    text: Come on Teava, we don't have time for a break. The Organist will be unset
+      if you're late... one your first day.
+    characterSprite: {fileID: 21300000, guid: 7aff7d0cbcdb41e4e8f39af833c476a0, type: 3}
   parentNode: {fileID: 0}
-  childNode: {fileID: -8726345619583956939}
---- !u!114 &2239421240263597998
+  childNode: {fileID: 8722745059129563795}
+--- !u!114 &4717327595003323294
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,7 +126,92 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 445
+    x: -358
+    y: 386
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: "TEAVA runs into the lobby quickly followed by NOT\u0102. Teava stops and
+      finishes a slice of toast. She then puts another slice in her mouth."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 0}
+  childNode: {fileID: 497591562122732419}
+--- !u!114 &4995563276182510672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 267
+    y: 378
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "NOT\u0102"
+    text: Its not my fault you sleep like your 6ft under.
+    characterSprite: {fileID: 21300000, guid: 7aff7d0cbcdb41e4e8f39af833c476a0, type: 3}
+  parentNode: {fileID: 0}
+  childNode: {fileID: -4510006874174793539}
+--- !u!114 &6916429051225139242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -560
+    y: 386
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: But it seems she is running a tad bit late.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 0}
+  childNode: {fileID: 4717327595003323294}
+--- !u!114 &8722745059129563795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 63
     y: 380
     width: 170
     height: 115
@@ -158,7 +220,35 @@ MonoBehaviour:
   sentence:
     characterName: TEAVA
     text: Well I wouldn't have needed to rush if someone hadn't forgotten to wake
-      me up.
-    characterSprite: {fileID: 21300000, guid: 6512e8a5ab295a24f92ef8d09cc1b4e2, type: 3}
+      me up
+    characterSprite: {fileID: 21300000, guid: af0aa4fe14ac64a40949d3a751a5c5d7, type: 3}
   parentNode: {fileID: 0}
-  childNode: {fileID: -6971393968152010600}
+  childNode: {fileID: 4995563276182510672}
+--- !u!114 &9172298085137998231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 690
+    y: 377
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: "NOT\u0102"
+    text: (Sigh)
+    characterSprite: {fileID: 21300000, guid: 7aff7d0cbcdb41e4e8f39af833c476a0, type: 3}
+  parentNode: {fileID: 0}
+  childNode: {fileID: 0}

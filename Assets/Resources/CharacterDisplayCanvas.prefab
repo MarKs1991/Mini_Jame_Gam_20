@@ -187,6 +187,7 @@ RectTransform:
   m_Children:
   - {fileID: 6464009364534451648}
   - {fileID: 6464009363782940092}
+  - {fileID: 745937570951001890}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -269,12 +270,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxPlayerHealth: 3
-  PlayerHealthCount: 3
+  PlayerHealthCount: 2
   MaxOrganPipeCount: 5
-  OrganPipeCount: 5
+  OrganPipeCount: 4
   audioClipList:
   - {fileID: 8300000, guid: decf4eff536da5c41aab5dc23641fe1c, type: 3}
   - {fileID: 8300000, guid: 0e00eb744bba701438c735fe496e4301, type: 3}
+  - {fileID: 8300000, guid: 0e00eb744bba701438c735fe496e4301, type: 3}
+  dialogNodeGraphs:
+  - {fileID: 11400000, guid: 925f6cb45b1359d49ad93ec491cb661b, type: 2}
+  - {fileID: 11400000, guid: 0c9861f06aad1dc4b8da18fb315afcee, type: 2}
+  - {fileID: 11400000, guid: 1ce96efc6bab5cf4599968b069fd4373, type: 2}
+  - {fileID: 11400000, guid: 3641db48647ef694da0bc796faf4bb30, type: 2}
+  - {fileID: 11400000, guid: 13fcae26d4c18d74ab6985be9e9b8421, type: 2}
+  - {fileID: 11400000, guid: f87472f178660474aa07804a347944b8, type: 2}
+  - {fileID: 11400000, guid: 31eb0fb9482e2b248b8083ad92889bba, type: 2}
+  - {fileID: 11400000, guid: fec6c2dc45e2b594e96ba20c82e366e5, type: 2}
+  - {fileID: 11400000, guid: e3fd0eac2bcab9b4fa18c252666e745d, type: 2}
 --- !u!82 &5032050472835204710
 AudioSource:
   m_ObjectHideFlags: 0
@@ -636,10 +648,10 @@ RectTransform:
   m_Father: {fileID: 6464009362899113328}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.55210316, y: 0.83559495}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.2199707, y: 1.5600586}
-  m_SizeDelta: {x: -0.15002441, y: -3.1210022}
+  m_AnchorMin: {x: 0.26410317, y: 0.83559495}
+  m_AnchorMax: {x: 0.71510315, y: 1}
+  m_AnchoredPosition: {x: 1.3699951, y: -1.5604858}
+  m_SizeDelta: {x: -3.1500244, y: -3.1210022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6464009363814289299
 GameObject:
@@ -1523,3 +1535,39 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &8461666811650002401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 745937570951001890}
+  m_Layer: 0
+  m_Name: TimerPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &745937570951001890
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8461666811650002401}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6464009362899113328}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.7606593, y: 0.83559495}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 1.0189209, y: 2.0200195}
+  m_SizeDelta: {x: -2.0337, y: -4.04}
+  m_Pivot: {x: 0.5, y: 0.5}
