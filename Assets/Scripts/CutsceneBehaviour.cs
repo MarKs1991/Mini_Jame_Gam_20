@@ -5,7 +5,7 @@ using UnityEngine;
 public class CutsceneBehaviour : MonoBehaviour
 {
     private UIMAnager uiManager = null;
-    bool isInteractable = true;
+    public bool isInteractable = true;
 
     // Start is called before the first frame update
     void Start()

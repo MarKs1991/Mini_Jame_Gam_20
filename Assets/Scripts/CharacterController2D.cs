@@ -63,6 +63,7 @@ public class CharacterController2D : MonoBehaviour
         {
             r2d.velocity = new Vector2(0, 0);
             executeJump = false;
+            animeEvents.IdleStarted();
             return;
         }
 

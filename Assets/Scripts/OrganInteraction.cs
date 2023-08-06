@@ -15,7 +15,6 @@ public class OrganInteraction : MonoBehaviour
             if (other.GetComponent<StatusManager>() != null)
             {
                 SceneManager.LoadScene("Success");
-                Destroy(this.gameObject);
 
             }
 

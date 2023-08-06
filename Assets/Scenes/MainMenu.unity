@@ -428,7 +428,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.65
+  m_fontSize: 45.45
   m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -716,10 +716,10 @@ RectTransform:
   m_Father: {fileID: 1015912752}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.1732, y: -272.31}
-  m_SizeDelta: {x: 198.491, y: 82.3815}
+  m_AnchorMin: {x: 0.45178843, y: 0.010618162}
+  m_AnchorMax: {x: 0.55128896, y: 0.08852986}
+  m_AnchoredPosition: {x: -2.9994888, y: 0.5}
+  m_SizeDelta: {x: 4.4909973, y: -2.6184998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &291585772
 MonoBehaviour:
@@ -1064,12 +1064,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'A,S: Move left and right
 
-    Spacebar: Jump, Continue dialog
+    Spacebar: Jump
 
-    Q:
-    Shoot Wave Gun
+    Q: Shoot Wave Gun
 
-    E: Use Melee Attack
+    E:
+    Use Melee Attack
+
+    Enter: Continue dialogue
 
     Esc: Go back to Main Menu'
   m_isRightToLeft: 0
@@ -1098,7 +1100,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.55
+  m_fontSize: 72
   m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1808,7 +1810,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.3
+  m_fontSize: 72
   m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2406,10 +2408,10 @@ RectTransform:
   m_Father: {fileID: 733578691}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.1732025, y: -272.31}
-  m_SizeDelta: {x: 198.491, y: 82.3815}
+  m_AnchorMin: {x: 0.44872004, y: 0.022176618}
+  m_AnchorMax: {x: 0.5502631, y: 0.102000006}
+  m_AnchoredPosition: {x: 1.0000534, y: -4}
+  m_SizeDelta: {x: 0.4909973, y: -5.6184998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1589885727
 MonoBehaviour:

@@ -2,6 +2,7 @@ using cherrydev;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIMAnager : MonoBehaviour
 {
@@ -62,6 +63,9 @@ public class UIMAnager : MonoBehaviour
                     this.transform.GetChild(0).GetChild(i).GetChild(0).gameObject.SetActive(false);
                 }
             }
+
+            if (PlayerHealthCount <= 0)
+                gameoverState();
         }
         else
         {
@@ -92,6 +96,11 @@ public class UIMAnager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void gameoverState()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 
     public int GetAmmoCount()

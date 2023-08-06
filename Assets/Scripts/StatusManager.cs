@@ -31,17 +31,9 @@ public class StatusManager : MonoBehaviour
         }
         uiManager.AdjustHealthAndPipeDisplay((int)-dmg, true);
 
-        health = health - dmg;
-
-        if (health <= 0)
-            gameoverState();
-
     }
 
-    public void gameoverState()
-    {
-        SceneManager.LoadScene("GameOver");
-    }
+    
 
     public void addHealth(int addHealth)
     {
@@ -52,12 +44,6 @@ public class StatusManager : MonoBehaviour
 
         uiManager.AdjustHealthAndPipeDisplay(addHealth, true);
         uiManager.TriggerHealthGainSound();
-
-        health = health + addHealth;
-        if (health > 5)
-        {
-            health = 5;
-        }
 
     }
     public void addCollectable(int addedCollectables)
