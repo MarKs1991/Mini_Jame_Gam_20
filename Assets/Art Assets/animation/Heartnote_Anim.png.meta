@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Heartnote_Anim_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 448
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b03f26884c6b7d40bf5e206374f8529
+      internalID: 563931234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heartnote_Anim_1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 445
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3661f2a84c0576e4aac4957423fa5956
+      internalID: 927146587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heartnote_Anim_2
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 437
+        width: 183
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0912bcd2d464bca4fbe43127976f5dd7
+      internalID: -424117513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heartnote_Anim_3
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 428
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf13070d1694d8c4fa16def98f020ad4
+      internalID: -1568315562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heartnote_Anim_4
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 421
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303c29f4ef2f0ba448e7cb10cadafae5
+      internalID: 1877469345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heartnote_Anim_5
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 418
+        width: 183
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d4dd1244304844094e639fbbb8597e
+      internalID: -250076040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heartnote_Anim_6
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 418
+        width: 183
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d0efc9fb70bb34f877141c30d5d53a
+      internalID: 633610465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heartnote_Anim_7
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 418
+        width: 183
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e82935256512a43bff217b19590233
+      internalID: 477835992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heartnote_Anim_8
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 63
+        width: 183
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b0979c47942a244aa1d108e3dc0e1e
+      internalID: 418071949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heartnote_Anim_9
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 74
+        width: 183
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bb74265044cc7498f79e7656d0a4ff
+      internalID: -160191723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heartnote_Anim_10
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 84
+        width: 184
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925e496ee7643d0478ff277993fef300
+      internalID: 173320177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +345,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Heartnote_Anim_0: 563931234
+      Heartnote_Anim_1: 927146587
+      Heartnote_Anim_10: 173320177
+      Heartnote_Anim_2: -424117513
+      Heartnote_Anim_3: -1568315562
+      Heartnote_Anim_4: 1877469345
+      Heartnote_Anim_5: -250076040
+      Heartnote_Anim_6: 633610465
+      Heartnote_Anim_7: 477835992
+      Heartnote_Anim_8: 418071949
+      Heartnote_Anim_9: -160191723
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

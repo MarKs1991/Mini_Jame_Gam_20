@@ -19,6 +19,8 @@ public class CharacterController2D : MonoBehaviour
     CapsuleCollider2D mainCollider;
     Transform t;
 
+    public StatusManager statusManager;
+
     public AudioSource characterAudioSource;
     public List<AudioClip> clipList = new List<AudioClip>();
     private enum audioMovementSoundClip {Jump1, Jump2, Jump3, Jump4, Hurt1, Hurt2, Hurt3, Hurt4, None};
@@ -26,9 +28,12 @@ public class CharacterController2D : MonoBehaviour
     private PlayerAnimationEvents animeEvents;
     private bool executeJump = false;
 
+    private UIMAnager uiManager = null;
+
     // Start is called before the first frame update
     void Start()
     {
+        statusManager = GetComponent<StatusManager>();
         animeEvents = this.transform.GetChild(0).GetComponent<PlayerAnimationEvents>();
         t = transform;
         r2d = GetComponent<Rigidbody2D>();
@@ -42,6 +47,8 @@ public class CharacterController2D : MonoBehaviour
         {
             cameraPos = mainCamera.transform.position;
         }
+
+        uiManager = GameObject.Find("CharacterDisplayCanvas").GetComponent<UIMAnager>();
     }
 
     // Update is called once per frame
@@ -108,9 +115,15 @@ public class CharacterController2D : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Q) && isGrounded)
         {
-            if (!animeEvents.GetIsShootingState())
+            if (uiManager == null)
+            {
+                uiManager = GameObject.Find("CharacterDisplayCanvas").GetComponent<UIMAnager>();
+            }
+
+            if (!animeEvents.GetIsShootingState() && uiManager.GetAmmoCount() > 0)
             {
                 animeEvents.StartShooting();
+                uiManager.AdjustHealthAndPipeDisplay(-1, false);
             }
             
         }
@@ -120,6 +133,13 @@ public class CharacterController2D : MonoBehaviour
             if (!animeEvents.GetBonkingState())
             {
                 animeEvents.StartBonking();
+                bool EnemyinRange = statusManager.getAttackRange();
+                Debug.Log("EnemyinRange= " + EnemyinRange);
+                if (EnemyinRange)
+                {
+                    statusManager.getAttackTarget().GetComponent<EnemyGuard>().takeDamageFromPlayer(1);
+                    animeEvents.DoDamage();
+                }
             }
 
         }

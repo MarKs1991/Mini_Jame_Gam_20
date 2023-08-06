@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 9092984591812102937}
   - component: {fileID: 9092984591812102943}
   - component: {fileID: 9092984591812102940}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Enemy_Ooze
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pipe_Anim_0
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 358
+        width: 53
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e77ccc1bb099f409a8006961c018a3
+      internalID: 895087227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Anim_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 355
+        width: 53
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5baa5dbf795d21479d278b2abde50d1
+      internalID: -994009028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Anim_2
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 347
+        width: 53
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c98de9194fdf9a4687c22d91d0de110
+      internalID: 133264902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Anim_3
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 338
+        width: 53
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4d4d34dc5cf8940bcde890e984b4cc
+      internalID: 456099301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Anim_4
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 331
+        width: 54
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cc407fef97c1649834094ba2e83b63
+      internalID: -325994732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Anim_5
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 328
+        width: 54
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b7feb4a0316d54fa84769cb959a7e4
+      internalID: 1196454054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Anim_6
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 328
+        width: 54
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853c68b664208524e86b45d34cc7ecfb
+      internalID: 879831884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Anim_7
+      rect:
+        serializedVersion: 2
+        x: 2369
+        y: 328
+        width: 53
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f097221d8943c4892b8250de782d68
+      internalID: -604899355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Anim_8
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 333
+        width: 53
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0cd8028ff9410646bb4ac9b4ed40408
+      internalID: 317652396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Anim_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 23
+        width: 53
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c73c08ed0f4adc40ad13065276432ba
+      internalID: 1404836330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe_Anim_10
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 33
+        width: 53
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884b31dba4290284eb9a7137e7210e2d
+      internalID: -1253889846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +345,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pipe_Anim_0: 895087227
+      Pipe_Anim_1: -994009028
+      Pipe_Anim_10: -1253889846
+      Pipe_Anim_2: 133264902
+      Pipe_Anim_3: 456099301
+      Pipe_Anim_4: -325994732
+      Pipe_Anim_5: 1196454054
+      Pipe_Anim_6: 879831884
+      Pipe_Anim_7: -604899355
+      Pipe_Anim_8: 317652396
+      Pipe_Anim_9: 1404836330
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
