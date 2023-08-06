@@ -9,7 +9,7 @@ public class CharacterController2D : MonoBehaviour
     public float maxSpeed = 3.4f;
     public float jumpHeight = 6.5f;
     public float gravityScale = 1.5f;
-    public Camera mainCamera;
+    //public Camera mainCamera;
 
     bool facingRight = true;
     float moveDirection = 0;
@@ -46,10 +46,10 @@ public class CharacterController2D : MonoBehaviour
         r2d.gravityScale = gravityScale;
         facingRight = t.localScale.x > 0;
 
-        if (mainCamera)
-        {
-            cameraPos = mainCamera.transform.position;
-        }
+        //if (mainCamera)
+        //{
+        //    cameraPos = mainCamera.transform.position;
+        //}
 
         uiManager = GameObject.Find("CharacterDisplayCanvas").GetComponent<UIMAnager>();
     }
@@ -155,10 +155,10 @@ public class CharacterController2D : MonoBehaviour
         }
 
         // Camera follow
-        if (mainCamera)
-        {
-            mainCamera.transform.position = new Vector3(t.position.x, (t.position.y + 1.5f), cameraPos.z);
-        }
+       // if (mainCamera)
+        //{
+       //     mainCamera.transform.position = new Vector3(t.position.x, (t.position.y + 1.5f), cameraPos.z);
+       // }
     }
 
     private void LateUpdate()
