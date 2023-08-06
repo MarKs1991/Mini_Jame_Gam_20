@@ -23,7 +23,7 @@ TagManager:
   - Wave
   - 
   - 
-  - 
+  - BackGround
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3218956771
+    locked: 0
+  - name: Character
+    uniqueID: 3914173117
     locked: 0
