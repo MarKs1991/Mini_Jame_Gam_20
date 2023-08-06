@@ -21,9 +21,8 @@ public class Collectable : MonoBehaviour
 
             if (other.GetComponent<StatusManager>() != null)
             {
-                Debug.Log(10);
                 other.gameObject.GetComponent<StatusManager>().addCollectable(collectableValue);
-                Destroy(transform.parent.gameObject);
+                Destroy(this.gameObject);
 
             }
 

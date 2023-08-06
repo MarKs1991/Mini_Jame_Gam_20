@@ -10,9 +10,14 @@ public class UIMAnager : MonoBehaviour
     public int MaxOrganPipeCount = 5;
     public int OrganPipeCount = 0;
 
+    private AudioSource uiAudioSource = null;
+    public List<AudioClip> audioClipList = new List<AudioClip>();
+    private enum UISounds { HealthGain, PipeGain, None}
+
     // Start is called before the first frame update
     void Start()
     {
+        uiAudioSource = GetComponent<AudioSource>();
         AdjustHealthAndPipeDisplay(0, true);
         AdjustHealthAndPipeDisplay(0, false);
     }
@@ -47,11 +52,6 @@ public class UIMAnager : MonoBehaviour
                 {
                     this.transform.GetChild(0).GetChild(i).GetChild(0).gameObject.SetActive(false);
                 }
-            }
-
-            if (PlayerHealthCount == 0)
-            {
-                //Trigger Game Over
             }
         }
         else
@@ -88,5 +88,17 @@ public class UIMAnager : MonoBehaviour
     public int GetAmmoCount()
     {
         return OrganPipeCount;
+    }
+
+    public void TriggerHealthGainSound()
+    {
+        uiAudioSource.clip = audioClipList[(int)UISounds.HealthGain];
+        uiAudioSource.Play();
+    }
+
+    public void TriggerPipeGainSound()
+    {
+        uiAudioSource.clip = audioClipList[(int)UISounds.PipeGain];
+        uiAudioSource.Play();
     }
 }

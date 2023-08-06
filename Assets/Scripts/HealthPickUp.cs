@@ -13,12 +13,6 @@ public class HealthPickUp : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D other) {        
         
         if (other.gameObject.layer == 12)
@@ -26,9 +20,9 @@ public class HealthPickUp : MonoBehaviour
        
             if (other.GetComponent<StatusManager>() != null)
             {
-                Debug.Log(10);
+
                 other.gameObject.GetComponent<StatusManager>().addHealth(Health);
-                Destroy(transform.parent.gameObject);
+                Destroy(this.gameObject);
 
             }
 
