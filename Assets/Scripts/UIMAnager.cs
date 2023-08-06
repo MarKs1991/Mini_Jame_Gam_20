@@ -19,6 +19,8 @@ public class UIMAnager : MonoBehaviour
     public List<DialogNodeGraph> dialogNodeGraphs = new List<DialogNodeGraph>();
     public enum DialogTitle {Dialog1, Dialog2, Dialog3, Dialog4, Dialog5, Dialog6, Dialog8, Dialog9, Dialog10 }
 
+    public List<CutsceneBehaviour> cutsceneBehaviourList = new List<CutsceneBehaviour>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -112,13 +114,32 @@ public class UIMAnager : MonoBehaviour
     public void ActivateDialog(DialogTitle title)
     {
         Debug.Log("Dialog is starting. Stop moving!");
-        //ToDo: Tell all the other objects, that they are not allowed to do anything
+        //Tell all the other objects, that they are not allowed to do anything
+        for (int i = 0; i < cutsceneBehaviourList.Count; i++)
+        {
+            cutsceneBehaviourList[i].SetInteractivity(false);
+        }
+
         dialogBehaviour.StartDialog(dialogNodeGraphs[(int)title]);
     }
 
     public void StopShowingDialog()
     {
         Debug.Log("Dialog is over. Move again!");
-        //ToDo: Tell all the other objects, that they can move again
+        //Tell all the other objects, that they can move again
+        for (int i = 0; i < cutsceneBehaviourList.Count; i++)
+        {
+            cutsceneBehaviourList[i].SetInteractivity(true);
+        }
+    }
+
+    public void AddListener(CutsceneBehaviour cB)
+    {
+        cutsceneBehaviourList.Add(cB);
+    }
+
+    public void RemoveListener(CutsceneBehaviour cB)
+    {
+        cutsceneBehaviourList.Remove(cB);
     }
 }

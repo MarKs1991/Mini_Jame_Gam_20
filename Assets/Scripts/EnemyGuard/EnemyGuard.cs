@@ -13,15 +13,21 @@ public class EnemyGuard : MonoBehaviour
     //Status
     public float enemyHealth = 3f;
     public float damage = 1f;
+    private CutsceneBehaviour cB = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        cB = GetComponent<CutsceneBehaviour>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!cB.GetInteractableState())
+        {
+            return;
+        }
+
         Debug.Log("Collision detected!");
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
@@ -42,6 +48,11 @@ public class EnemyGuard : MonoBehaviour
 
     public void ApplyDamage()
     {
+        if (!cB.GetInteractableState())
+        {
+            return;
+        }
+
         if (GameObject.FindWithTag("Player").GetComponent<CharacterController2D>() != null)
             GameObject.FindWithTag("Player").GetComponent<CharacterController2D>().PlayPlayerDamage();
 
@@ -54,6 +65,11 @@ public class EnemyGuard : MonoBehaviour
 
     public void ApplyDamage(Transform transform)
     {
+        if (!cB.GetInteractableState())
+        {
+            return;
+        }
+
         if (transform.GetComponent<CharacterController2D>() != null)
             transform.GetComponent<CharacterController2D>().PlayPlayerDamage();
 
@@ -74,7 +90,7 @@ public class EnemyGuard : MonoBehaviour
         
         if(enemyHealth <= 0)
         {
-
+            cB.RemoveListener();
             enemyGuardAnimationEvents.dying();
         }
 
