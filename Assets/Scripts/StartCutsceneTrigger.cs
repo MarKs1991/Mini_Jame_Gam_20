@@ -2,6 +2,7 @@ using cherrydev;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartCutsceneTrigger : MonoBehaviour
 {
@@ -12,5 +13,10 @@ public class StartCutsceneTrigger : MonoBehaviour
     void Start()
     {
         dialogBehaviour.StartDialog(dialogNodeGraph);
+    }
+
+    public void changeScene(string SceneName)
+    {
+        SceneManager.LoadScene(SceneName);
     }
 }

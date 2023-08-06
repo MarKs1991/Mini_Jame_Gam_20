@@ -385,6 +385,38 @@ PrefabInstance:
       propertyPath: dialogCharDelay
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 6627439700010980252, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: onDialogFinished.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6627439700010980252, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: onDialogFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6627439700010980252, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: onDialogFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 143157218}
+    - target: {fileID: 6627439700010980252, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: onDialogFinished.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6627439700010980252, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: onDialogFinished.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6627439700010980252, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: onDialogFinished.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StartCutsceneTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6627439700010980252, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: onDialogFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6627439700010980252, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
+      propertyPath: onDialogFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9048852604884697071, guid: 0bd08184220c9914a877f3a735221e05, type: 3}
       propertyPath: m_Name
       value: Dialog Prefab
