@@ -34,6 +34,10 @@ public class EnemyGuard : MonoBehaviour
             enemyGuardAnimationEvents.getHitByWave();
          
         }
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Water"))
+        {
+            Debug.Log("wa");
+        }
     }
 
     public void ApplyDamage()

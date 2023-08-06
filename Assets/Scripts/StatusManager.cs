@@ -8,6 +8,9 @@ public class StatusManager : MonoBehaviour
     public float health;
     public int collectables;
 
+    public bool InMeleeRange;
+    public Transform AttackTarget;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +52,26 @@ public class StatusManager : MonoBehaviour
     {
         collectables = collectables + addedCollectables;
     }
-
     
+    public void setAttackRange(bool inRange)
+    {
+        InMeleeRange = inRange;
+    }
+
+    public bool getAttackRange()
+    {
+        return InMeleeRange;
+
+    }
+    public void setAttackTarget(Transform Target)
+    {
+        AttackTarget = Target;
+    }
+
+    public Transform getAttackTarget()
+    {
+        return AttackTarget;
+
+    }
+
 }

@@ -47,7 +47,7 @@ public class EnemyGuardAnimationEvents : MonoBehaviour
 
     public void dying()
     {
-        animator.SetTrigger("Dying");
+        animator.SetTrigger("isDying");
         PlayDeathSoundeffect();
     }
 

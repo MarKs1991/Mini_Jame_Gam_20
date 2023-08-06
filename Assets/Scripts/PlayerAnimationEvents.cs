@@ -156,7 +156,7 @@ public class PlayerAnimationEvents : MonoBehaviour
         Debug.Log("Bonk an enemy!");
 
         //ToDo: Only play these sounds, on a successful hit
-        /*
+        
         float randomNumber = Random.Range(0f, 1f);
         if (randomNumber < 0.3f)
         {
@@ -170,8 +170,9 @@ public class PlayerAnimationEvents : MonoBehaviour
         {
             audioSource.clip = clipList[(int)PlayerSounds.Bonk3];
         }
-        audioSource.Play();
-        */
+        audioSource.Play();     
+        
+
         //ToDo: Do damage to foes
     }
 
