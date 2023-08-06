@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBehaviour: {fileID: 866149216}
-  dialogNodeGraph: {fileID: 11400000, guid: 31eb0fb9482e2b248b8083ad92889bba, type: 2}
+  dialogNodeGraph: {fileID: 11400000, guid: e3fd0eac2bcab9b4fa18c252666e745d, type: 2}
 --- !u!82 &143157219
 AudioSource:
   m_ObjectHideFlags: 0

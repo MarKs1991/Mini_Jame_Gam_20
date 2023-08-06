@@ -32,6 +32,8 @@ public class CharacterController2D : MonoBehaviour
 
     private CutsceneBehaviour cB = null;
 
+    private bool gunPermit = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -123,7 +125,7 @@ public class CharacterController2D : MonoBehaviour
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
         }
 
-        if (Input.GetKeyUp(KeyCode.Q) && isGrounded)
+        if (Input.GetKeyUp(KeyCode.Q) && isGrounded && gunPermit)
         {
             if (uiManager == null)
             {
@@ -227,5 +229,10 @@ public class CharacterController2D : MonoBehaviour
     {
         Debug.Log("SetExecuteJumpingTrigger: " + set);
         executeJump = set;
+    }
+
+    public void GainGunPermit()
+    {
+        gunPermit = true;
     }
 }

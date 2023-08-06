@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StatusManager : MonoBehaviour
 {
@@ -39,8 +40,7 @@ public class StatusManager : MonoBehaviour
 
     public void gameoverState()
     {
-        //play dyingAnimation
-        //show GameOVERscreen with restart
+        SceneManager.LoadScene("GameOver");
     }
 
     public void addHealth(int addHealth)

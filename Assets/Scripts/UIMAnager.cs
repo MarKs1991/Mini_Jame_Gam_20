@@ -59,7 +59,7 @@ public class UIMAnager : MonoBehaviour
                 }
                 else
                 {
-                    this.transform.GetChild(1).GetChild(i).GetChild(0).gameObject.SetActive(false);
+                    this.transform.GetChild(0).GetChild(i).GetChild(0).gameObject.SetActive(false);
                 }
             }
         }
