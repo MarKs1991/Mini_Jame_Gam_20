@@ -448,6 +448,7 @@ MonoBehaviour:
   jumpHeight: 5
   gravityScale: 1.5
   mainCamera: {fileID: 0}
+  statusManager: {fileID: 0}
   characterAudioSource: {fileID: 6220485022176496677}
   clipList:
   - {fileID: 8300000, guid: 83fbd065271bc434cbfb0b62b3ae0639, type: 3}
@@ -509,6 +510,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   collectables: 0
+  InMeleeRange: 0
+  AttackTarget: {fileID: 0}
 --- !u!1 &6220485023728930961
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1617681486374072634}
   - component: {fileID: 3050495900009420934}
+  - component: {fileID: 7388492122129376380}
   m_Layer: 14
   m_Name: EnemyColliderArea
   m_TagString: Untagged
@@ -704,3 +708,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.25, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7388492122129376380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8898083376683216696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810f8d4bc254a3644855f6bc123d342a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statusManager: {fileID: 6220485022231854327}
+  enemyInRange: {fileID: 0}
+  isAttacking: 0
