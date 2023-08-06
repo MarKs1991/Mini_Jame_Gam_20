@@ -1599,6 +1599,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3955547841371606864, guid: a5bb3714494add94bbd8a89ef47c7f75, type: 3}
   m_PrefabInstance: {fileID: 2033575473}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1359533563 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6220485022231854324, guid: 505269210dcfdfd48bbbec8f134b0b7a, type: 3}
+  m_PrefabInstance: {fileID: 810711066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1392413616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1871,6 +1876,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1635793224}
   - component: {fileID: 1635793223}
+  - component: {fileID: 1635793225}
   - component: {fileID: 1635793222}
   m_Layer: 0
   m_Name: Main Camera
@@ -1946,6 +1952,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1635793225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635793221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 337535907bd6c8f4aa9ae5d19fefa91a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1359533563}
+  OffsetX: 0
+  OffsetY: 1.5
+  OffsetZ: -10
+  CamLimits: 1
+  LeftLimit: -38
+  RightLimit: 38
+  BottomLimit: -20
+  TopLimit: 20
 --- !u!1 &1640724728
 GameObject:
   m_ObjectHideFlags: 0
