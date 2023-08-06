@@ -1,8 +1,11 @@
+#if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
+
+
 
 namespace cherrydev
 {
@@ -670,3 +673,4 @@ namespace cherrydev
         }
     }
 }
+#endif

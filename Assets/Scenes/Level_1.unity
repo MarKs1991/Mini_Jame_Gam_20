@@ -192,6 +192,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635793224}
     m_Modifications:
+    - target: {fileID: 494541138629703567, guid: 99fc17c40d455354fb04368d54043ded, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.5340195
+      objectReference: {fileID: 0}
     - target: {fileID: 6464009362899113328, guid: 99fc17c40d455354fb04368d54043ded, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -279,6 +283,10 @@ PrefabInstance:
     - target: {fileID: 6464009362899113329, guid: 99fc17c40d455354fb04368d54043ded, type: 3}
       propertyPath: m_Name
       value: CharacterDisplayCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6464009364511671301, guid: 99fc17c40d455354fb04368d54043ded, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.17101288
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99fc17c40d455354fb04368d54043ded, type: 3}
@@ -3005,7 +3013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 330615394403613823, guid: c03807ee3336944438b7edd1b13d73ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.204582
+      value: 43.19
       objectReference: {fileID: 0}
     - target: {fileID: 330615394403613823, guid: c03807ee3336944438b7edd1b13d73ec, type: 3}
       propertyPath: m_LocalPosition.y
